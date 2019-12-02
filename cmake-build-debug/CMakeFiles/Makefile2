@@ -75,12 +75,12 @@ preinstall:
 CMakeFiles\BankAccountFinalPRJCT.dir\all:
 	$(MAKE) -f CMakeFiles\BankAccountFinalPRJCT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\depend
 	$(MAKE) -f CMakeFiles\BankAccountFinalPRJCT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dzirt\CLionProjects\BankAccountFinalPRJCT\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target BankAccountFinalPRJCT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dzirt\CLionProjects\BankAccountFinalPRJCT\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target BankAccountFinalPRJCT"
 .PHONY : CMakeFiles\BankAccountFinalPRJCT.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\BankAccountFinalPRJCT.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dzirt\CLionProjects\BankAccountFinalPRJCT\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dzirt\CLionProjects\BankAccountFinalPRJCT\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dzirt\CLionProjects\BankAccountFinalPRJCT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\BankAccountFinalPRJCT.dir\rule

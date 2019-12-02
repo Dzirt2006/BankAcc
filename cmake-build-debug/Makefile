@@ -151,6 +151,33 @@ BankAccount.cpp.s:
 	$(MAKE) -f CMakeFiles\BankAccountFinalPRJCT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\BankAccount.cpp.s
 .PHONY : BankAccount.cpp.s
 
+SavingAccount.obj: SavingAccount.cpp.obj
+
+.PHONY : SavingAccount.obj
+
+# target to build an object file
+SavingAccount.cpp.obj:
+	$(MAKE) -f CMakeFiles\BankAccountFinalPRJCT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\SavingAccount.cpp.obj
+.PHONY : SavingAccount.cpp.obj
+
+SavingAccount.i: SavingAccount.cpp.i
+
+.PHONY : SavingAccount.i
+
+# target to preprocess a source file
+SavingAccount.cpp.i:
+	$(MAKE) -f CMakeFiles\BankAccountFinalPRJCT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\SavingAccount.cpp.i
+.PHONY : SavingAccount.cpp.i
+
+SavingAccount.s: SavingAccount.cpp.s
+
+.PHONY : SavingAccount.s
+
+# target to generate assembly for a file
+SavingAccount.cpp.s:
+	$(MAKE) -f CMakeFiles\BankAccountFinalPRJCT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\SavingAccount.cpp.s
+.PHONY : SavingAccount.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -190,6 +217,9 @@ help:
 	@echo ... BankAccount.obj
 	@echo ... BankAccount.i
 	@echo ... BankAccount.s
+	@echo ... SavingAccount.obj
+	@echo ... SavingAccount.i
+	@echo ... SavingAccount.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

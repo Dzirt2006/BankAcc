@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/dzirt/CLionProjects/BankAccountFinalPRJCT/BankAccount.cpp" "C:/Users/dzirt/CLionProjects/BankAccountFinalPRJCT/cmake-build-debug/CMakeFiles/BankAccountFinalPRJCT.dir/BankAccount.cpp.obj"
+  "C:/Users/dzirt/CLionProjects/BankAccountFinalPRJCT/SavingAccount.cpp" "C:/Users/dzirt/CLionProjects/BankAccountFinalPRJCT/cmake-build-debug/CMakeFiles/BankAccountFinalPRJCT.dir/SavingAccount.cpp.obj"
   "C:/Users/dzirt/CLionProjects/BankAccountFinalPRJCT/main.cpp" "C:/Users/dzirt/CLionProjects/BankAccountFinalPRJCT/cmake-build-debug/CMakeFiles/BankAccountFinalPRJCT.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")

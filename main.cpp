@@ -1,6 +1,12 @@
 #include <iostream>
+#include "SavingAccount.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    BankAccount acc;
+    SavingAccount save(100, 10);
+
+    SavingAccount *s=&save;
+    s->Action();
+
     return 0;
 }

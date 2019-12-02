@@ -3,4 +3,4 @@ project(BankAccountFinalPRJCT)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BankAccountFinalPRJCT main.cpp BankAccount.cpp BankAccount.h)
+add_executable(BankAccountFinalPRJCT main.cpp BankAccount.cpp BankAccount.h SavingAccount.cpp SavingAccount.h)

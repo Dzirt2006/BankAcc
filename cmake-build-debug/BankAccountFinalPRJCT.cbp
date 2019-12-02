@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/dzirt/CLionProjects/BankAccountFinalPRJCT/BankAccount.h">
 			<Option target="BankAccountFinalPRJCT"/>
 		</Unit>
+		<Unit filename="C:/Users/dzirt/CLionProjects/BankAccountFinalPRJCT/SavingAccount.cpp">
+			<Option target="BankAccountFinalPRJCT"/>
+		</Unit>
+		<Unit filename="C:/Users/dzirt/CLionProjects/BankAccountFinalPRJCT/SavingAccount.h">
+			<Option target="BankAccountFinalPRJCT"/>
+		</Unit>
 		<Unit filename="C:/Users/dzirt/CLionProjects/BankAccountFinalPRJCT/main.cpp">
 			<Option target="BankAccountFinalPRJCT"/>
 		</Unit>

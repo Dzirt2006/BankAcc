@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "BankAccountFinalPRJCT.lib"
   "BankAccountFinalPRJCT.pdb"
   "CMakeFiles/BankAccountFinalPRJCT.dir/BankAccount.cpp.obj"
+  "CMakeFiles/BankAccountFinalPRJCT.dir/SavingAccount.cpp.obj"
   "CMakeFiles/BankAccountFinalPRJCT.dir/main.cpp.obj"
 )
 
