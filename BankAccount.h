@@ -5,13 +5,21 @@
 #ifndef BANKACCOUNTFINALPRJCT_BANKACCOUNT_H
 #define BANKACCOUNTFINALPRJCT_BANKACCOUNT_H
 
+#include <iostream>
+
+using namespace std;
 
 class BankAccount {
 public:
-    BankAccount(){
-
+    BankAccount() {
+        this->Num_Withdrawals = 0;
+        this->Num_Deposit = 0;
+        this->Monthly_Serv_Charges = 0;
     }
 
+    BankAccount(double Current) {
+        this->Balance = Current;
+    }
 
     BankAccount(double Current, double Current_Interest) {
         this->Balance = Current;
@@ -27,30 +35,45 @@ protected:
     double Monthly_Serv_Charges; //per month
 
     //virtual functions
-    virtual void deposit(double dep_amount){
-        this->Balance+=dep_amount;
+    virtual void deposit(double dep_amount) {
+        this->Balance += dep_amount;
         this->Num_Deposit++;
     }
 
-    virtual void withdraw(double withdraw_amount){
-        this->Balance-=withdraw_amount;
-        this->Num_Withdrawals++;
+    virtual void withdraw(double withdraw_amount) {
+        Balance -= withdraw_amount;
+        Num_Withdrawals++;
     }
 
-    virtual void calcInt(){
+    virtual void calcInt() {
         double Monthly_Int_rate;
         double Monthly_Interest;
-        Monthly_Int_rate=this->An_Interest/12;
-        Monthly_Interest=this->Balance*Monthly_Int_rate;
-        this->Balance+=Monthly_Interest;
+        Monthly_Int_rate = (An_Interest / 12);
+        Monthly_Interest = Balance * Monthly_Int_rate;
+        cout << "You interest savings is: " << Monthly_Interest << endl;
+        Balance += Monthly_Interest;
     }
 
-    virtual void monthlyProc(){
-        this->Balance-=Monthly_Serv_Charges;
+    virtual void monthlyProc() {
+        Balance -= Monthly_Serv_Charges;
         calcInt();
-        this->Num_Withdrawals=0;
-        this->Num_Deposit=0;
-        this->Monthly_Serv_Charges=0;
+        Num_Withdrawals = 0;
+        Num_Deposit = 0;
+        Monthly_Serv_Charges = 0;
+
+    }
+
+    virtual void monthlyStatement() {
+        if (Num_Withdrawals == 0) {
+            cout << "Nothing to charge" << endl;
+        } else {
+            monthlyProc();
+            cout << "\n-----------------------------------------------" << endl;
+            cout << "withdrawal amount: " << Num_Withdrawals << endl;
+            cout << "Your monthly service charge is: " << Monthly_Serv_Charges << "$" << endl;
+            cout << "Your final balance is: " << Balance << "$" << endl;
+            cout << "-----------------------------------------------\n" << endl;
+        }
     }
 };
 

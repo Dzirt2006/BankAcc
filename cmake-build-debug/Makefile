@@ -151,6 +151,33 @@ BankAccount.cpp.s:
 	$(MAKE) -f CMakeFiles\BankAccountFinalPRJCT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\BankAccount.cpp.s
 .PHONY : BankAccount.cpp.s
 
+CheckingAccout.obj: CheckingAccout.cpp.obj
+
+.PHONY : CheckingAccout.obj
+
+# target to build an object file
+CheckingAccout.cpp.obj:
+	$(MAKE) -f CMakeFiles\BankAccountFinalPRJCT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\CheckingAccout.cpp.obj
+.PHONY : CheckingAccout.cpp.obj
+
+CheckingAccout.i: CheckingAccout.cpp.i
+
+.PHONY : CheckingAccout.i
+
+# target to preprocess a source file
+CheckingAccout.cpp.i:
+	$(MAKE) -f CMakeFiles\BankAccountFinalPRJCT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\CheckingAccout.cpp.i
+.PHONY : CheckingAccout.cpp.i
+
+CheckingAccout.s: CheckingAccout.cpp.s
+
+.PHONY : CheckingAccout.s
+
+# target to generate assembly for a file
+CheckingAccout.cpp.s:
+	$(MAKE) -f CMakeFiles\BankAccountFinalPRJCT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BankAccountFinalPRJCT.dir\CheckingAccout.cpp.s
+.PHONY : CheckingAccout.cpp.s
+
 SavingAccount.obj: SavingAccount.cpp.obj
 
 .PHONY : SavingAccount.obj
@@ -217,6 +244,9 @@ help:
 	@echo ... BankAccount.obj
 	@echo ... BankAccount.i
 	@echo ... BankAccount.s
+	@echo ... CheckingAccout.obj
+	@echo ... CheckingAccout.i
+	@echo ... CheckingAccout.s
 	@echo ... SavingAccount.obj
 	@echo ... SavingAccount.i
 	@echo ... SavingAccount.s

@@ -12,9 +12,9 @@ using namespace std;
 
 class SavingAccount : public BankAccount {
 public:
-    SavingAccount(double current, double currentInterest)  {
-        this->Balance=current;
-        this->An_Interest=currentInterest;
+    SavingAccount(double current, double currentInterest) {
+        this->Balance = current;
+        this->An_Interest = currentInterest;
     }
 
 public:
@@ -24,9 +24,13 @@ private:
     //prototype
     void Status();
 
+    void Repeat();
+
+    //void MonthlyStatement();
 
     //variables
     bool status{};
+
 
     //override methods
     void withdraw(double withdraw_amount) override {
@@ -43,22 +47,23 @@ private:
         if (!status) {
             double check = Balance + dep_amount;
             if (check > 25) {
-                status=true;
-                cout<<"Your account now is active!"<<endl;
-            }else {
-                cout<<"Your account still is inactive"<<endl;
+                status = true;
+                cout << "Your account now is active!" << endl;
+            } else {
+                cout << "Your account still is inactive" << endl;
             }
         }
         BankAccount::deposit(dep_amount);
     }
 
     void monthlyProc() override {
-        if(Num_Withdrawals>4){
-            Monthly_Serv_Charges+=Num_Withdrawals;
-            Balance-=Monthly_Serv_Charges;
-            if(Balance<25){
-                status=false;
-                cout<<"Your balance inactive because it has less than 25$."<<endl;
+        if (Num_Withdrawals > 0) {
+            Monthly_Serv_Charges += Num_Withdrawals;
+            Balance -= Monthly_Serv_Charges;
+            calcInt();
+            if (Balance < 25) {
+                status = false;
+                cout << "Your balance inactive because it has less than 25$." << endl;
             }
         }
     }
